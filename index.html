@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+  <title>Ejiro's Cake Shop</title>
+  <link href="css/biz.css" rel="stylesheet">
+  <script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <h1>Ejiro's Cake Shop<h1>
+  <h2>for your homely cakes</h2>
+  
+  <div class="carrot">
+    <p>
+      Carrot Cake <span class="price">N4000</span><br />
+      <small>
+        Carrot cake is a sweet and moist spice cake, full of cut carrots and toasted nuts. One part of the cake is that the orange flakes of the cut carrot give the cake color and texture, along with sweetness and moisture.
+      </small>
+    </p>
+  </div>
+
+  <div class="banana">
+    <p>Banana Cake <span class="price">N3500</span><br />
+    <small>The aroma of vanilla and bananas from this moist banana cake will tempt you to eat dessert first. Don't give in! This is one cake that's worth getting through a meal for. Don't settle for imitations, this is the best Banana Cake ever.</small></p>
+  </div>
+
+  <div class="pound">
+    <p>Chocolate Pound Cake <span class="price">N2000</span><br />
+    <small>This chocolatey fluffy goodness is a cake traditionally made with a pound of each of four ingredients: flour, butter, eggs, and sugar with an addition of cocoa and spices.</small></p>
+  </div>
+
+  <script>
+  $('div').on('click', function() {
+     $(this).toggleClass('show-description');
+  });
+  </script>
+</body>
+</html>
